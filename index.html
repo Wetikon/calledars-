@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar">
+        <div class="header">
+            <button class="prev-month">Prev</button>
+            <h2 class="month-name">Month Name</h2>
+            <button class="next-month">Next</button>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-bar-inner"></div>
+            <div class="progress-bar-text">0% completed</div>
+        </div>
+        <div class="weekdays">
+            <div>Monday</div>
+            <div>Tuesday</div>
+            <div>Wednesday</div>
+            <div>Thursday</div>
+            <div>Friday</div>
+            <div>Saturday</div>
+            <div>Sunday</div>
+        </div>
+        <div class="days">
+            <div class="day">
+                <span>1</span>
+                <div class="task-list">
+                    <div class="task">
+                        Task 1 <a href="http://www.bbc.com" target="_blank">BBC</a>
+                    </div>
+                </div>
+            </div>
+            <!-- More days and tasks -->
+        </div>
+    </div>
+    <div class="prompt" id="newTaskPrompt" style="display: none;">
+        <div class="prompt-text">New task:</div>
+        <div class="prompt-buttons">
+            <button id="promptOk">OK</button>
+            <button id="promptCancel">Cancel</button>
+            <button id="promptPaste">Paste</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
